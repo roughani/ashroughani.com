@@ -98,7 +98,7 @@
       ================================================== -->
       <section class="values anchor-offset" id="values">
         <div class="row equal">
-          <h1 class="section-heading text-center">Values</h1>
+          <h1 class="section-heading text-center" id="fittext1">Values</h1>
           <div class="col-sm-6">
             <h3><i class="fa fa-heart"></i> Empathy</h3>
             I’m committed to helping people and making a difference in their lives. I use empathy as a tool to see things from the perspective of others and develop ways to make our interactions more human.
@@ -143,7 +143,7 @@
         <div class="container">
 
           <div class="row">
-            <h1 class="section-heading text-center">Professional Experience</h1>
+            <h1 class="section-heading text-center" id="fittext2">Professional Experience</h1>
             <p class="lead">I’m a T-shaped generalist with a broad diversity of skills and deep subject matter expertise in public administration and civic innovation. I improve the methods, tools, and services by which citizens interact with public agencies, civic organizations, and each other. Here are the roles that have kept me busy in my professional career:</p>
           </div>
           
@@ -253,7 +253,7 @@
         <div class="container">
 
           <div class="row">
-            <h1 class="section-heading text-center">Education</h1>
+            <h1 class="section-heading text-center" id="fittext3">Education</h1>
           </div>
           <div class="row">
             <div class="col-sm-4 text-center">
@@ -292,8 +292,8 @@
         <div class="container">
 
           <div class="row">
-            <h1 class="section-heading text-center">Projects</h1>
-          </div>
+            <h1 class="section-heading text-center" id="fittext4">Projects</h1>
+          </div> 
           <div class="row">
             <div class="col-sm-6">
               <div class="well well-lg well-project">
@@ -337,7 +337,7 @@
         <div class="container">
 
           <div class="row">
-            <h1 class="section-heading text-center">Skills</h1>
+            <h1 class="section-heading text-center" id="fittext5">Skills</h1>
           </div>
           <div class="row">
             <div class="col-sm-4">
@@ -456,7 +456,7 @@
         <div class="container">
 
           <div class="row">
-            <h1 class="section-heading text-center">Hire Me</h1>
+            <h1 class="section-heading text-center" id="fittext6">Hire Me</h1>
           </div>
           <div class="jumbotron">
             <h1>Let's work together.</h1>
@@ -477,10 +477,12 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
     <!-- Scrollspy -->
     <script type="text/javascript">
       $('body').scrollspy({ target: '#target_nav' })
     </script>
+
     <!-- Smoothscroll -->
     <script type="text/javascript">
       $(function(){
@@ -497,6 +499,17 @@
           });
         });
       });
+    </script>
+
+    <!-- FitText -->
+    <script src="js/jquery.fittext.js"></script>
+    <script type="text/javascript">
+      $("#fittext1").fitText();
+      $("#fittext2").fitText();
+      $("#fittext3").fitText();
+      $("#fittext4").fitText();
+      $("#fittext5").fitText();
+      $("#fittext6").fitText();
     </script>
   </body>
 </html>
