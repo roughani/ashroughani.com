@@ -1,10 +1,14 @@
 <section id="values">
   <div class="container">
 
-    <div class="row">
-      <h2>Values</h2>
-      <hr>
-    </div>
+    <h2>Values</h2>
+    <hr>
+    {% for value in site.data.values %}
+      <div class="col-sm-6">
+        <h3><i class="fa fa-{{ value.icon }}"></i> {{ value.name }}</h3>
+        <p>{{ value.description }}</p>
+      </div>
+    {% endfor %}
 
   </div><!-- /.container -->
 </section>
