@@ -34,7 +34,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#navbar">
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -45,13 +45,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">@shRoughani.com</a>
+          <a class="navbar-brand smoothscroll" href="#home">@shRoughani.com</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            {% for section in site.data.navigation %}
+              <li><a href="#{{ section.slug }}" class="smoothscroll">{{ section.name }}</a></li>
+            {% endfor %}
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -67,7 +67,7 @@
 
     <!-- Scrollspy -->
     <script type="text/javascript">
-      $('body').scrollspy({ target: '#target_nav' })
+      $('body').scrollspy({ target: '#navbar' })
     </script>
 
     <!-- Smoothscroll -->

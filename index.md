@@ -10,6 +10,6 @@ layout: main
 
 {% include education.html %}
 
-{% include projects.html %}
-
 {% include skills.html %}
+
+{% include news.html %}

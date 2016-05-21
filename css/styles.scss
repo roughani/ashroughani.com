@@ -7,9 +7,14 @@
 
 body {
   padding-top: 50px;
+  position: relative;
 }
 i {
   color: $brand-primary;
+}
+.anchor-offset {
+  padding-top: 50px;
+  margin-top: -50px;
 }
 .img-home {
   margin-top: 22px;
