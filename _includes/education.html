@@ -1,9 +1,23 @@
 <section id="education" class="anchor-offset">
   <div class="container">
 
+    <h2>Education</h2>
+    <hr>
+
     <div class="row">
-      <h2>Education</h2>
-      <hr>
+      {% for degree in site.data.education %}
+      <div class="col-sm-4">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <h3 class="list-group-item-heading text-center">{{ degree.degree }}</h3>
+            <h4 class="list-group-item-text">
+              <i class="fa fa-university"></i> {{ degree.university }}
+            </h4>
+            <h6 class="list-group-item-heading">{{ degree.date }}</h6>
+          </li>
+        </ul>
+      </div>
+      {% endfor %}
     </div>
 
   </div><!-- /.container -->
