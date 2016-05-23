@@ -11,5 +11,3 @@ layout: main
 {% include education.html %}
 
 {% include skills.html %}
-
-{% include news.html %}
