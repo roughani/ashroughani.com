@@ -1,0 +1,60 @@
+- category: POLICY
+  skills:
+    - Policy Development
+    - Policy Analysis
+    - Strategic Planning
+    - Open Data
+    - Open Government
+    - Civic Innovation
+    - Social Innovation
+    - Data Analysis
+    - Performance Measurement
+- category: STRATEGY
+  skills:
+    - Market Segmentation/Positioning
+    - Content Development/Strategy
+    - Content Marketing
+    - Product Management
+    - Strategic Communications
+    - Organizational Design
+    - Public Relations
+    - Public Affairs
+- category: DESIGN
+  skills:
+    - Empathy
+    - Prototyping
+    - Wireframing
+    - Ethnography
+    - User Research
+    - Graphic Design
+    - Usability Testing
+    - Copywriting/Editing
+    - Process/Service Design
+    - Information Architecture
+    - User Experience Design
+    - Human-Computer Interaction
+- category: DIGITAL
+  skills:
+    - Videography
+    - Photography
+    - Adobe Lightroom
+    - Adobe Photoshop
+    - Adobe Premiere Pro
+    - Adobe Audition
+    - Web/Social Analytics
+    - HTML/CSS
+    - Ruby on Rails
+    - Jekyll
+- category: COMMUNITY
+  skills:
+    - Leadership Development
+    - Enterprise Collaboration
+    - Community Outreach
+    - Change Management
+    - Social Entrepreneurship
+    - Public Engagement
+- category: LEARNING
+  skills:
+    - React.js
+    - Python
+    - Adobe After Effects
