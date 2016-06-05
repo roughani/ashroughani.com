@@ -8,5 +8,5 @@
   slug: education
 - name: Skills
   slug: skills
-- name: News
-  slug: news
+# - name: News
+#   slug: news
