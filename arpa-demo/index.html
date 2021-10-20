@@ -1,6 +1,139 @@
 <!DOCTYPE html>
-<html>
-<body>
-<script async src="//jsfiddle.net/aroughani/fc2750na/71/embed/result/"></script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- <link href="styles.css" rel="stylesheet"> -->
+    <style>.highcharts-data-table table,.highcharts-figure{min-width:320px;max-width:660px;margin:1em auto}.highcharts-data-table table{font-family:Verdana,sans-serif;border-collapse:collapse;border:1px solid #ebebeb;margin:10px auto;text-align:center;width:100%;max-width:500px}.highcharts-data-table caption{padding:1em 0;font-size:1.2em;color:#555}.highcharts-data-table th{font-weight:600;padding:.5em}.highcharts-data-table caption,.highcharts-data-table td,.highcharts-data-table th{padding:.5em}.highcharts-data-table thead tr,.highcharts-data-table tr:nth-child(even){background:#f8f8f8}.highcharts-data-table tr:hover{background:#f1f7ff}</style>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+  </head>
+
+  <body>
+    <figure class="highcharts-figure">
+      <div id="container"></div>
+    </figure>
+    <script>
+      Highcharts.setOptions({
+        lang: {
+            thousandsSep: ','
+        }
+      });
+      // Create the chart
+      Highcharts.chart('container', {
+          chart: {
+              type: 'pie'
+          },
+          title: {
+              text: 'ARP Funding Allocation'
+          },
+          credits: {
+            enabled: false
+          },
+          subtitle: {
+              text: 'As of October 19, 2021. Click the slices to view individual programs.'
+          },
+
+          accessibility: {
+              announceNewData: {
+                  enabled: true
+              },
+              point: {
+                  valueSuffix: '%'
+              }
+          },
+
+          plotOptions: {
+              series: {
+                  dataLabels: {
+                      enabled: true,
+                      format: '{point.name}: ${point.y:,.0f}'
+                  }
+              }
+          },
+
+          tooltip: {
+              headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+              pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>${point.y:,.0f}</b><br/>'
+          },
+
+          series: [
+              {
+                  name: "Focus Area",
+                  colorByPoint: true,
+                  data: [
+                      {
+                          name: "Small Business and Commerical Corridor Revitalization",
+                          y: 17700000,
+                          drilldown: "Small Business and Commerical Corridor Revitalization"
+                      },
+                      {
+                          name: "Homeless and Housing",
+                          y: 41000000,
+                          drilldown: null
+                      },
+                      {
+                          name: "Youth Workforce Training, and Gang Prevention",
+                          y: 3050000,
+                          drilldown: "Youth Workforce Training, and Gang Prevention"
+                      },
+                      {
+                          name: "Unallocated ARP Balance",
+                          y: 50450000,
+                          drilldown: null
+                      }
+                  ]
+              }
+          ],
+          drilldown: {
+              series: [
+                  {
+                      name: "Small Business and Commerical Corridor Revitalization",
+                      id: "Small Business and Commerical Corridor Revitalization",
+                      data: [
+                          [
+                              "Small Business Priorities",
+                              8200000
+                          ],
+                          [
+                              "Downtown Core and Old Sacramento Revitalization",
+                              5000000
+                          ],
+                          [
+                              "Vaccine Outreach and Education",
+                              1000000
+                          ],
+                          [
+                              "Sacramento Inclusive Economic Development Collaborative",
+                              3500000
+                          ]
+                      ]
+                  },
+                  {
+                      name: "Youth Workforce Training, and Gang Prevention",
+                      id: "Youth Workforce Training, and Gang Prevention",
+                      data: [
+                          [
+                              "Center for Workers' Rights",
+                              550000
+                          ],
+                          [
+                              "Aggie Square Job Center",
+                              1000000
+                          ],
+                          [
+                              "Gang Prevention and Intervention",
+                              1500000
+                          ]
+                      ]
+                  }
+              ]
+          }
+      });
+    </script>
+  </body>
 </html>
+
