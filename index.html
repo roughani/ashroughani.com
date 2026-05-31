@@ -1,242 +1,559 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDKG8J2W6Y"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'G-EDKG8J2W6Y');
-        </script>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Ash Roughani - Municipal Macrodata Refinement</title>
-        <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">@shRough@ni.com</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="..." /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#values">Core Values</a></li>
-                </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ash Roughani — Civic Systems Architect</title>
+    <meta name="description"
+        content="Ash Roughani — Institutional bureaucracy hacker and civic systems architect. Sacramento, California.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300..900;1,400..700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Spline+Sans+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div id="progress"></div>
+
+    <nav id="nav">
+        <a href="#top" class="brand"><span class="dot"></span>ASH ROUGHANI</a>
+        <div class="links">
+            <a href="#identity">Identity</a>
+            <a href="#pillars">Pillars</a>
+            <a href="#cases">Case Studies</a>
+            <a href="#data">By the Numbers</a>
+            <a href="#values">Values</a>
+            <a href="#experience">Experience</a>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <header id="top">
+        <div class="blueprint" id="bp"></div>
+        <div class="wrap">
+            <div class="h-top">
+                <div class="h-meta">
+                    <span>Sacramento, California</span>
+                    <div class="sep"></div>
+                    <span>Civic Systems Practice</span>
+                    <div class="sep"></div>
+                    <span>Est. City Hall</span>
+                </div>
+                <span class="portrait"><img src="/img/profile.jpg" alt="Ash Roughani"
+                        onerror="this.closest('.portrait').style.display='none'"></span>
             </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Ash
-                        <span class="text-primary">Roughani</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        Sacramento, California
-                    </div>
-                    <p class="lead mb-5">I'm a systems thinker who enjoys bringing people together to improve the end-to-end civic user experience through creativity, innovation, and design in complex public policy environments.</p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://twitter.com/roughani"><i class="fab fa-twitter"></i></a>
-                        <a class="social-icon" href="https://www.linkedin.com/in/ashroughani/"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/roughani"><i class="fab fa-github"></i></a>
+            <h1 class="name">Ash<br><b>Roughani</b></h1>
+            <p class="deck">The institutional <span class="hl">bureaucracy&nbsp;hacker</span> &amp; civic systems
+                architect.</p>
+            <p class="lede">I translate high-stakes legislative, fiscal, and policy frameworks into seamless,
+                human-centered civic experiences — <em>rebuilding administrative culture, procurement pathways, and
+                    public data systems from the inside out.</em></p>
+            <div class="h-foot">
+                <a class="badge" href="https://www.comstocksmag.com/longreads/fresh-intervention" target="_blank"
+                    rel="noopener"><span class="star">★</span>Comstock's Emerging Young Leader, 2016 <span
+                        class="ext">↗</span></a>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/ashroughani/" aria-label="LinkedIn" target="_blank"
+                        rel="noopener"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45C23.2 24 24 23.22 24 22.27V1.73C24 .77 23.2 0 22.22 0z" />
+                        </svg></a>
+                    <a href="https://www.threads.com/@roughani" aria-label="Threads" target="_blank" rel="noopener"><svg
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.781 3.631 2.695 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.668-1.64 1.633-3.961 1.013-5.476-.371-.91-1.05-1.65-1.957-2.143-.225 1.273-.623 2.292-1.19 3.046-.755 1.005-1.82 1.558-3.162 1.638-1.018.06-1.997-.18-2.756-.68-.898-.592-1.42-1.496-1.476-2.54-.054-1.014.342-1.945 1.114-2.624.736-.65 1.775-1.034 3.086-1.142a8.31 8.31 0 0 1 1.713.038c-.073-.434-.222-.787-.445-1.054-.305-.367-.78-.557-1.408-.564h-.029c-.504 0-1.187.139-1.624.793l-1.55-1.041c.586-.868 1.537-1.346 2.682-1.346h.044c1.913.012 3.054 1.195 3.171 3.261.067.043.134.088.2.135 1.18.86 1.83 2.135 1.83 3.594 0 1.886-.823 3.354-2.382 4.246-.892.512-2.06.766-3.467.766h-.014z" />
+                        </svg></a>
+                    <a href="https://github.com/roughani" aria-label="GitHub" target="_blank" rel="noopener"><svg
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.2c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.8 1.3 3.49.99.1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.24-3.24-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.24a11.5 11.5 0 0 1 6 0c2.3-1.56 3.3-1.24 3.3-1.24.66 1.66.25 2.88.12 3.18.77.84 1.23 1.92 1.23 3.24 0 4.63-2.8 5.65-5.48 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="ticker">
+        <div class="track" id="track">
+            <span><i>◆</i>Startup in Residence<i>◆</i>One City, One Future<i>◆</i>SacramentoSTAT<i>◆</i>Sacramento Urban
+                Technology Lab<i>◆</i>Open Budget Sacramento<i>◆</i>Measure U Advisory Commission<i>◆</i>Creative
+                Economy Fund<i>◆</i>Code for Sacramento<i>◆</i>Sac2050<i>◆</i></span>
+            <span><i>◆</i>Startup in Residence<i>◆</i>One City, One Future<i>◆</i>SacramentoSTAT<i>◆</i>Sacramento Urban
+                Technology Lab<i>◆</i>Open Budget Sacramento<i>◆</i>Measure U Advisory Commission<i>◆</i>Creative
+                Economy Fund<i>◆</i>Code for Sacramento<i>◆</i>Sac2050<i>◆</i></span>
+        </div>
+    </div>
+
+    <!-- ===== IDENTITY ===== -->
+    <section id="identity">
+        <div class="wrap">
+            <div class="sec-head rv"><span class="no">01 / Core Identity</span></div>
+            <h2 class="sec-title rv" style="max-width:16ch">Not a manager of government. A designer of it.</h2>
+            <p class="sec-intro rv" style="margin-top:30px">Sustainable public-sector innovation can't be achieved just
+                by changing policies or electing new officials. <b>It requires a structural overhaul of administrative
+                    culture, procurement pathways, and operational data systems — from the inside out.</b> Across state
+                policy, civic-tech entrepreneurship, and senior municipal administration, that's the single thesis I've
+                been testing for fifteen years.</p>
+            <div class="pillars">
+                <div class="rv" style="display:contents">
+                    <div
+                        style="background:var(--card);padding:38px 40px;display:grid;grid-template-columns:repeat(3,1fr);gap:30px">
+                        <div>
+                            <div class="kicker">Translate</div>
+                            <p style="font-size:17px;color:var(--ink-2);margin-top:10px">Complex fiscal &amp;
+                                legislative frameworks into human-centered civic UX.</p>
+                        </div>
+                        <div>
+                            <div class="kicker" style="color:var(--accent2)">Unblock</div>
+                            <p style="font-size:17px;color:var(--ink-2);margin-top:10px">Risk-averse procurement so
+                                small, agile teams can build for the city.</p>
+                        </div>
+                        <div>
+                            <div class="kicker" style="color:var(--ink)">Convene</div>
+                            <p style="font-size:17px;color:var(--ink-2);margin-top:10px">Government, capital, academia
+                                &amp; community into one working coalition.</p>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Special Projects Manager</h3>
-                            <div class="subheading mb-3">Office of the City Manager, City of Sacramento</div>
-                            <p>Responsible for Citywide performance measures and grants management.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Nov 2021 - Present</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PARALLAX PORTRAIT BAND ===== -->
+    <div class="parallax" id="parallax">
+        <div class="px-bg" id="pxbg"></div>
+        <div class="px-overlay"></div>
+        <div class="px-grain"></div>
+        <div class="px-inner">
+            <div class="wrap">
+                <div class="px-kicker">The Practitioner</div>
+                <blockquote><span class="mk">“</span>I'm a systems thinker who enjoys bringing people together to
+                    improve the end-to-end civic user experience.<span class="mk">”</span></blockquote>
+                <cite>— Ash Roughani · <a href="https://ashroughani.com/" target="_blank" rel="noopener">on his practice
+                        ↗</a></cite>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== PILLARS ===== -->
+    <section id="pillars">
+        <div class="wrap">
+            <div class="sec-head rv"><span class="no">02</span>
+                <h2 class="sec-title">Strategic Pillars</h2>
+            </div>
+            <p class="sec-intro rv">Three interlocking disciplines — each backed by documented regional work. <b>Click
+                    any pillar to open the operating record.</b></p>
+            <div class="pillars rv">
+                <div class="pillar" data-pillar>
+                    <div class="pno">P-01</div>
+                    <div>
+                        <h3>Human-Centered Civic Experience</h3>
+                        <div class="tag">Civic UX · Service Design · Ethnography</div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Project Manager</h3>
-                            <div class="subheading mb-3">Office of Innovation & Economic Development, City of Sacramento</div>
-                            <p>Advanced inclusive economic development in the City of Sacramento by supporting COVID-19 economic relief and recovery programs, including small business forgivable loans and outdoor dining grant programs. Served as lead staffer to the Measure U Community Advisory Committee.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Jan 2020 - Nov 2021</span></div>
+                    <div class="pbody">
+                        <p>Reframing municipal services, public data, and local budgets as intuitive, end-to-end user
+                            interfaces — applying service design, ethnographic research, and agile product management to
+                            lower the barrier to citizen engagement.</p>
+                        <p><strong>Open Budget Sacramento</strong> cloned the Open Budget Oakland platform with civic
+                            developers Donald Brower, Mark A. Matney Jr., and Dan Fey, giving residents a visual tool to
+                            comprehend municipal spending. As head of product for <strong>Sac2050</strong>, I turned
+                            passive open data into a goal-oriented regional dashboard. With civic technologist Joel
+                            Riphagen, the <strong>California Health Data Project</strong> explored an interoperable
+                            human-services data ecosystem across state and local divisions.</p>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Innovation Specialist</h3>
-                            <div class="subheading mb-3">Office of Innovation & Economic Development, City of Sacramento</div>
-                            <p>Within the City Manager's Office, continuing to lead innovation capacity building efforts that make City Hall a more agile organization, building out the Sacramento Urban Technology Lab, facilitating demonstration partnerships, administering grant programs, and managing multiple opportunity pipelines.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">May 2018 - Jan 2020</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Bureaucracy Hacker</h3>
-                            <div class="subheading mb-3">Office of Mayor Darrell Steinberg, City of Sacramento</div>
-                            <p>Developed strategies to streamline bureaucratic processes in the Mayor's Office for Innovation & Entrepreneurship.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Dec 2016 - Apr 2018</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                          <h3 class="mb-0">Program Manager</h3>
-                          <div class="subheading mb-3">Office of Mayor Kevin Johnson, City of Sacramento</div>
-                          <p>Under Mayor Kevin Johnson, operationalized the Mayor's Office for Innovation & Entrepreneurship to build Sacramento's startup pipeline, engage the innovation ecosystem, and make City Hall open for business. Advanced policies, processes, resources, and incentives.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Jun 2016 - Dec 2016</span></div>
-                      </div>
-                      
-                      <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                          <h3 class="mb-0">Freelance Videographer + Web Developer</h3>
-                          <div class="subheading mb-3">ashrock | digital</div>
-                          <p>I help organizations and brands tell their stories through compelling visual, cross-platform communications. I do just about everything, but specialize in video production and user experience design.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Jul 2011 - Jun 2016</span></div>
-                      </div>
-                      
-                      <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                          <h3 class="mb-0">Founder and CEO</h3>
-                          <div class="subheading mb-3">Delivery Unit</div>
-                          <p>Led an early-stage enterprise software-as-a-service startup focused on performance management automation for government and nonprofit organizations.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Sep 2015 - May 2016</span></div>
-                      </div>
-                      
-                      <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                          <h3 class="mb-0">Head of Product</h3>
-                          <div class="subheading mb-3">Sac2050</div>
-                          <p>Sac2050 is the next phase of Public Innovation. We're engaging the public to develop a shared vision for the Sacramento region. That vision will be translated into measurable goals to support the development of a civic operating system to track progress toward those goals. In addition, we will link the programs and activities of public and nonprofit organizations with their social impact. I'm responsible for bootstrapping this vision into reality and developing the end-to-end product experience. No pressure.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Dec 2014 - May 2016</span></div>
-                      </div>
-                      
-                      <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                          <h3 class="mb-0">Product Manager</h3>
-                          <div class="subheading mb-3">Public Innovation</div>
-                          <p>Laid the foundation for a nascent civic innovation and social entrepreneurship ecosystem in the Sacramento region. Developed civic technology products, incubated civic projects, empowered change agents, and brought people together to solve public problems and improve the citizen experience. Ultimately, we could not create sufficient market demand to sustain a civic incubator in Sacramento, so we pivoted to a product-focused model with the advent of Sac2050.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Aug 2012 - Nov 2014s</span></div>
-                      </div>
-                      
-                      <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                          <h3 class="mb-0">Senior Associate</h3>
-                          <div class="subheading mb-3">California Forward</div>
-                          <p>Advanced critical governance/structural reform policies for the state of California related to elections, the budget process, and civic engagement. Performed strategic planning, data analysis, and public policy development.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Jan 2008 - Jul 2011s</span></div>
-                      </div>
-                      
-                      <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                          <h3 class="mb-0">Executive Fellow & Policy Analyst</h3>
-                          <div class="subheading mb-3">Business, Transportation & Housing Agency</div>
-                          <p>Advised executive staff in the Schwarzenegger Administration on a variety of public policy issues facing the agency, which oversees many of the largest departments in the state. Led the implementation of an Executive Order to expand broadband deployment by streamlining the permitting process and helped state agencies better collaborate.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Dec 2006 - Dec 2007</span></div>
-                      </div>
-                      
-                      <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                          <h3 class="mb-0">Legislative Intern</h3>
-                          <div class="subheading mb-3">Fair Political Practices Commission</div>
-                          <p>Analyzed and tracked legislation and served as an assistant press secretary.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Jun 2006 - Aug 2006</span></div>
-                      </div>                      
+                    <div class="chev">＋</div>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">University of California, Davis</h3>
-                            <div class="subheading mb-3">Master of Business Administration (MBA) Coursework (DNF)</div>
-                            <p>Completed half of the program, after which I resisted the sunk cost fallacy and determined that the marginal benefit of finishing my MBA would not exceed the marginal cost.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2011 - 2013</span></div>
+                <div class="pillar" data-pillar>
+                    <div class="pno">P-02</div>
+                    <div>
+                        <h3>Pragmatic Bureaucracy Hacking</h3>
+                        <div class="tag">Agile Procurement · MVPs · Policy Reform</div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Sacramento State University</h3>
-                            <div class="subheading mb-3">Master of Public Policy & Administration (MPPA)</div>
-                            <p>Specialized in political reform in advanced democracies.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2008</span></div>
+                    <div class="pbody">
+                        <p>The structural dismantling of risk-averse procurement pipelines and legacy policies that keep
+                            good, cheap solutions out of government.</p>
+                        <p>Running the <strong>Startup in Residence (STIR)</strong> program from the Mayor's Office, I
+                            replaced multi-page proposals with a simplified, Screendoor-powered application — letting
+                            agile teams bid directly on civic challenges. Instead of buying inflexible software, a
+                            four-month residency had startups and city staff co-build, test, and refine MVPs. One
+                            resident, <strong>Unleash Live</strong>, converted its pilot analyzing real-time
+                            traffic-camera feeds into a formal municipal contract.</p>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">University of California, Santa Barbara</h3>
-                            <div class="subheading mb-3">B.A. Philosophy</div>
+                    <div class="chev">＋</div>
+                </div>
+                <div class="pillar" data-pillar>
+                    <div class="pno">P-03</div>
+                    <div>
+                        <h3>Multi-Sector Ecosystem Architecture</h3>
+                        <div class="tag">Coalition Building · Triple Helix · Grants</div>
+                    </div>
+                    <div class="pbody">
+                        <p>Aligning the divergent motivations of government, private tech, higher education, and
+                            community advocates into a single working coalition.</p>
+                        <p>Under Mayor Darrell Steinberg and alongside Chief Innovation Officer Louis Stewart, I helped
+                            operate the <strong>Sacramento Urban Technology Lab</strong> — a "Triple Helix" living lab
+                            turning the city into a testing site for autonomous shuttles, cybersecurity, and food
+                            systems. I managed the $1M annual grant program funding talent accelerators like Square Root
+                            Academy and Lab 7 Coworking.</p>
+                    </div>
+                    <div class="chev">＋</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PULL QUOTE 1 ===== -->
+    <div class="pquote">
+        <div class="wrap rv">
+            <blockquote><span class="mk">“</span>We should be releasing everything by default — and not releasing only
+                those data sets we have good reason not to release.<span class="mk">”</span></blockquote>
+            <cite>— Government Technology, 2014 · <a
+                    href="https://www.govtech.com/data/National-Day-of-Civic-Hacking-Opportunities-in-Civic-Engagement.html"
+                    target="_blank" rel="noopener">on open data ↗</a></cite>
+        </div>
+    </div>
+
+    <!-- ===== CASE STUDIES ===== -->
+    <section id="cases">
+        <div class="wrap">
+            <div class="sec-head rv"><span class="no">03</span>
+                <h2 class="sec-title">Case Studies</h2>
+            </div>
+            <p class="sec-intro rv">Three public initiatives, each told as <b>structural problem → operational solution
+                    → community impact.</b></p>
+
+            <div class="case rv">
+                <div>
+                    <div class="cl-no">CS-01</div>
+                    <h3>Redesigning Municipal Procurement</h3>
+                    <div class="role">Innovation Specialist · Mayor's Office of Innovation &amp; Entrepreneurship</div>
+                    <div class="chips">
+                        <span class="chip">STIR</span><span class="chip">Screendoor</span><span class="chip">MVP
+                            residency</span><span class="chip">Unleash Live</span>
+                    </div>
+                </div>
+                <div class="cstack">
+                    <div><span class="lbl">The Problem</span>
+                        <p>Rigid, multi-page RFP rules created unnecessary barriers for small, localized technology
+                            companies — keeping better, cheaper solutions out of City Hall entirely.</p>
+                    </div>
+                    <div><span class="lbl solve">The Solution</span>
+                        <p>I stood up the <strong>Startup in Residence</strong> program: a simple Screendoor application
+                            replaced bulky proposals, and a four-month residency let startups co-build MVPs with city
+                            staff rather than buying finished, inflexible software.</p>
+                    </div>
+                    <div><span class="lbl impact">The Impact</span>
+                        <p>The city deployed behavioral-science tools to ease traffic congestion and aggregated
+                            EV-charging analytics. <strong>Unleash Live transitioned its pilot into a formal municipal
+                                contract</strong> for real-time vehicle and pedestrian counts — proof the model holds
+                            financially.</p>
+                        <a class="srclink"
+                            href="https://medium.com/innovatesac/sacramento-urban-technology-lab-sutl-tests-new-approach-to-streamline-procurement-for-startups-2bb3c2ef9083"
+                            target="_blank" rel="noopener">Source: #InnovateSac ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case rv">
+                <div>
+                    <div class="cl-no">CS-02</div>
+                    <h3>One City, One Future</h3>
+                    <div class="role">Special Projects Manager · Office of the City Manager</div>
+                    <div class="chips">
+                        <span class="chip">SacramentoSTAT</span><span class="chip">PerformanceStat</span><span
+                            class="chip">Strategic Workplan</span><span class="chip">Public Dashboards</span>
+                    </div>
+                </div>
+                <div class="cstack">
+                    <div><span class="lbl">The Problem</span>
+                        <p>For as long as anyone could remember, the City measured <strong>effort, not impact</strong> —
+                            how many calls were answered, permits issued, people served — but far less about whether
+                            those activities actually changed residents' lives. There was no performance-management
+                            framework to answer the central question: <em>are the things we're doing actually making a
+                                difference?</em></p>
+                    </div>
+                    <div><span class="lbl solve">The Solution</span>
+                        <p>I led a six-month, organization-wide effort to translate City Council's three priorities —
+                            Economic Development, Public Safety, and Homelessness — into a coherent strategic-planning
+                            framework, and designed <strong>SacramentoSTAT</strong>, a next-generation
+                            performance-management system rooted in the PerformanceStat model: accurate &amp; timely
+                            data, regular STAT meetings where department heads answer for results, relentless follow-up,
+                            and public-facing transparency dashboards.</p>
+                    </div>
+                    <div><span class="lbl impact">The Impact</span>
+                        <p>The <strong>Priorities Strategic Workplan</strong> was presented to City Council on May 5,
+                            2026, with a deliberate two-year rollout — piloting with eight priority-aligned departments
+                            before scaling citywide — so residents can ultimately see, on public dashboards, whether
+                            City services are working.</p>
+                        <a class="srclink"
+                            href="https://sacramento.legistar.com/View.ashx?M=F&ID=15427084&GUID=99ACD858-D523-44DE-8440-7B906EA1F687"
+                            target="_blank" rel="noopener">Source: City of Sacramento staff report ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case rv">
+                <div>
+                    <div class="cl-no">CS-03</div>
+                    <h3>Building the Civic-Tech Ecosystem</h3>
+                    <div class="role">Product Manager → Head of Product · Public Innovation / Sac2050</div>
+                    <div class="chips">
+                        <span class="chip">Code for Sacramento</span><span class="chip">Open Budget</span><span
+                            class="chip">CA Health Data</span><span class="chip">Sac2050</span>
+                    </div>
+                </div>
+                <div class="cstack">
+                    <div><span class="lbl">The Problem</span>
+                        <p>Sacramento had open data published all over the place — but no shared infrastructure or
+                            community using it strategically to drive civic decisions.</p>
+                    </div>
+                    <div><span class="lbl solve">The Solution</span>
+                        <p>I launched <strong>Code for Sacramento</strong> and Public Innovation, contributed to
+                            <strong>Open Budget Sacramento</strong>, and co-developed the <strong>California Health Data
+                                Project</strong> — then turned the vision into product with Sac2050's regional indicator
+                            dashboard.</p>
+                    </div>
+                    <div><span class="lbl impact">The Impact</span>
+                        <p>A standing community of civic developers, a visual municipal-budget tool residents could
+                            actually read, and a recognized regional ecosystem — validation that earned Comstock's
+                            <strong>top-emerging-leader</strong> recognition in 2016.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DATA ===== -->
+    <section id="data">
+        <div class="wrap">
+            <div class="sec-head rv"><span class="no">04</span>
+                <h2 class="sec-title">By the Numbers</h2>
+            </div>
+            <p class="sec-intro rv">The <b>$500,000 Creative Economy pilot</b> tested a hypothesis: targeted public
+                micro-investments in arts, culture, and food would catalyze hyper-local activity in underserved
+                neighborhoods. The application data told its own story.</p>
+
+            <div class="bars rv" id="bars">
+                <div class="bar-col expected">
+                    <div class="blabel">Anticipated Applications</div>
+                    <div class="bnum" data-count="200">0</div>
+                    <div class="bartrack">
+                        <div class="barfill" data-w="42"></div>
+                    </div>
+                </div>
+                <div class="bar-col actual">
+                    <div class="blabel">Actual Applications Received</div>
+                    <div class="bnum" data-count="480">0</div>
+                    <div class="bartrack">
+                        <div class="barfill" data-w="100"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="statgrid rv">
+                <div class="stat">
+                    <div class="sv"><span data-count="12">0</span>×</div>
+                    <div class="sk"><b>Oversubscribed.</b> Demonstrated capital deficit for regional arts.</div>
+                </div>
+                <div class="stat">
+                    <div class="sv">1 in <span data-count="27">0</span></div>
+                    <div class="sk"><b>Large-grant acceptance (~3.7%)</b> — more competitive than Harvard's 5.4%.</div>
+                </div>
+                <div class="stat">
+                    <div class="sv"><span data-count="7">0</span>×</div>
+                    <div class="sk"><b>Higher funding odds</b> for small-grant applicants — analytical guidance for
+                        future cohorts.</div>
+                </div>
+                <div class="stat">
+                    <div class="sv"><span data-count="8">0</span> in 10</div>
+                    <div class="sk"><b>Open to relocating</b> — validating place-based redistribution to
+                        underrepresented blocks.</div>
+                </div>
+            </div>
+            <cite class="rv">— Reported in Comstock's Magazine, 2018 · <a
+                    href="https://www.comstocksmag.com/web-only/oak-park-wins-bulk-2017-creative-economy-grant-food-related-projects"
+                    target="_blank" rel="noopener">on the Creative Economy Grant ↗</a></cite>
+        </div>
+    </section>
+
+    <!-- ===== PULL QUOTE 2 ===== -->
+    <div class="pquote">
+        <div class="wrap rv">
+            <blockquote><span class="mk">“</span>We have a hypothesis — that these investments will lead to greater
+                economic activity, or social impact on underserved communities.<span class="mk">”</span></blockquote>
+            <cite>— Comstock's Magazine, 2018 · <a
+                    href="https://www.comstocksmag.com/web-only/oak-park-wins-bulk-2017-creative-economy-grant-food-related-projects"
+                    target="_blank" rel="noopener">on the Creative Economy Fund ↗</a></cite>
+        </div>
+    </div>
+
+    <!-- ===== VALUES ===== -->
+    <section id="values">
+        <div class="wrap">
+            <div class="sec-head rv"><span class="no">05</span>
+                <h2 class="sec-title">Core Values</h2>
+            </div>
+            <p class="sec-intro rv">Eight principles that govern how I work. <b>Select one to read the philosophy —
+                    paired with the record.</b></p>
+            <div class="rv">
+                <div class="values" id="vbtns"></div>
+                <div class="vpanel">
+                    <div class="vinner" id="vinner"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience">
+        <div class="wrap">
+            <div class="sec-head rv"><span class="no">06</span>
+                <h2 class="sec-title">Experience</h2>
+            </div>
+            <p class="sec-intro rv">Fifteen years, one through-line: making the machinery of government more agile,
+                open, and humane.</p>
+            <div class="tl-split">
+                <div class="tl rv">
+                    <div class="tl-item cur">
+                        <div class="node"></div>
+                        <div class="yr">2021 — Present</div>
+                        <h4>Special Projects Manager</h4>
+                        <div class="org">Office of the City Manager, City of Sacramento</div>
+                        <p>Citywide performance measures and federal grants management; lead staffer to the Measure U
+                            Community Advisory Commission; led development of the One City, One Future framework and
+                            SacramentoSTAT.</p>
+                    </div>
+                    <div class="tl-item">
+                        <div class="node"></div>
+                        <div class="yr">2020 — 2021</div>
+                        <h4>Project Manager</h4>
+                        <div class="org">Office of Innovation &amp; Economic Development</div>
+                        <p>Advanced inclusive economic development; ran COVID-19 small-business forgivable loans and Al
+                            Fresco dining grants.</p>
+                    </div>
+                    <div class="tl-item">
+                        <div class="node"></div>
+                        <div class="yr">2018 — 2020</div>
+                        <h4>Innovation Specialist</h4>
+                        <div class="org">Office of Innovation &amp; Economic Development</div>
+                        <p>Built the Sacramento Urban Technology Lab, ran STIR, and managed multiple grant and
+                            opportunity pipelines.</p>
+                    </div>
+                    <div class="tl-item">
+                        <div class="node"></div>
+                        <div class="yr">2016 — 2018</div>
+                        <h4>Bureaucracy Hacker</h4>
+                        <div class="org">Office of Mayor Darrell Steinberg</div>
+                        <p>Designed strategies to streamline bureaucratic process in the Mayor's Office for Innovation
+                            &amp; Entrepreneurship.</p>
+                    </div>
+                    <div class="tl-item">
+                        <div class="node"></div>
+                        <div class="yr">2016</div>
+                        <h4>Program Manager</h4>
+                        <div class="org">Office of Mayor Kevin Johnson</div>
+                        <p>Operationalized the Mayor's Office for Innovation &amp; Entrepreneurship to build the startup
+                            pipeline and make City Hall open for business.</p>
+                    </div>
+                    <div class="tl-item">
+                        <div class="node"></div>
+                        <div class="yr">2014 — 2016</div>
+                        <h4>Head of Product · Founder/CEO</h4>
+                        <div class="org">Sac2050 &amp; Delivery Unit</div>
+                        <p>Bootstrapped a civic operating system to track regional goals; founded an enterprise SaaS
+                            startup for public-sector performance management.</p>
+                    </div>
+                    <div class="tl-item">
+                        <div class="node"></div>
+                        <div class="yr">2012 — 2014</div>
+                        <h4>Product Manager</h4>
+                        <div class="org">Public Innovation</div>
+                        <p>Laid the foundation for Sacramento's civic-innovation and social-entrepreneurship ecosystem.
+                        </p>
+                    </div>
+                    <div class="tl-item">
+                        <div class="node"></div>
+                        <div class="yr">2008 — 2011</div>
+                        <h4>Senior Associate</h4>
+                        <div class="org">California Forward</div>
+                        <p>Advanced statewide governance reform on elections, the budget process, and civic engagement.
+                        </p>
+                    </div>
+                    <div class="tl-item">
+                        <div class="node"></div>
+                        <div class="yr">2006 — 2007</div>
+                        <h4>Executive Fellow &amp; Policy Analyst</h4>
+                        <div class="org">Business, Transportation &amp; Housing Agency</div>
+                        <p>Advised executive staff in the Schwarzenegger Administration; led an Executive Order to
+                            expand broadband deployment.</p>
+                    </div>
+                </div>
+                <div class="edu">
+                    <div class="rv" style="margin-bottom:42px">
+                        <div class="kicker">Education</div>
+                        <p style="font-size:17px;color:var(--ink-2);margin-top:10px;max-width:48ch">The credentials
+                            matter less than the candor about them. I'd rather tell you what each chapter actually
+                            taught me.</p>
+                    </div>
+                    <div class="tl rv">
+                        <div class="tl-item">
+                            <div class="node"></div>
+                            <div class="yr">2011 — 2013</div>
+                            <h4>MBA Coursework <span class="dnf">DNF</span></h4>
+                            <div class="org">UC Davis</div>
+                            <p>Completed half the program, then resisted the sunk-cost fallacy: the marginal benefit of
+                                finishing wouldn't exceed the marginal cost.</p>
+                        </div>
+                        <div class="tl-item">
+                            <div class="node"></div>
+                            <div class="yr">2008</div>
+                            <h4>M.P.P.A.</h4>
+                            <div class="org">Sacramento State University</div>
+                            <p>Master of Public Policy &amp; Administration. Specialized in political reform in advanced
+                                democracies.</p>
+                        </div>
+                        <div class="tl-item">
+                            <div class="node"></div>
+                            <div class="yr">2005</div>
+                            <h4>B.A. Philosophy</h4>
+                            <div class="org">UC Santa Barbara</div>
                             <p>Where I learned how to think.</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2005</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">American River College</h3>
-                            <div class="subheading mb-3">A.A. Social Science</div>
+                        <div class="tl-item">
+                            <div class="node"></div>
+                            <div class="yr">2005</div>
+                            <h4>A.A. Social Science</h4>
+                            <div class="org">American River College</div>
                             <p>Where I navigated getting out of being lost in life.</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2005</span></div>
                     </div>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="values">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Core Values</h2>
-                    <div class="subheading mb-3">Empathy</div>
-                    <p>I’m committed to helping people and making a difference in their lives. I use empathy as a tool to see things from the perspective of others and develop ways to make our interactions more human.</p>    
-                    <div class="subheading mb-3">Co-creation</div>
-                    <p>I believe in building things with people, not just for people. This goes beyond mere collaboration. When the users of a product or service are involved in the development process, it’s more likely to make a real difference.</p>    
-                    <div class="subheading mb-3">Transparency</div>
-                    <p>I believe that openness and transparency take the friction out of collaboration and help us better understand how to balance our diverse interests. Together we can maximize the possibilities for mutual benefit by being our authentic selves.</p>    
-                    <div class="subheading mb-3">Trust</div>
-                    <p>I believe trust within organizations is critical to developing creative solutions. When we don’t trust each other, we impose rules that inhibit new approaches to solving problems and fear the audacity of hope.</p>    
-                    <div class="subheading mb-3">Innovation</div>
-                    <p>I believe that we can always do better and that continuous innovation helps organizations adapt to an accelerating velocity of change in the world. To innovate, we must constantly work to connect the dots.</p>    
-                    <div class="subheading mb-3">Experimentation</div>
-                    <p>I am not afraid to fail. Now, you might be afraid if we fail, but I’ve learned strategies to experiment without bearing significant risk. I can help us collect insights to guide future actions by always being in beta.</p>    
-                    <div class="subheading mb-3">Community</div>
-                    <p>I believe organizations are communities and that the strength of an organization depends on how tightly woven the community is. When we build teams of people who share a common vision, we nurture our communities.</p>    
-                    <div class="subheading mb-3">Resilience</div>
-                    <p>I believe that when things don’t go according to plan, we can and should bounce back quickly. Sometimes we need a change in strategy without a change in vision. Other times a plan isn’t even appropriate in the first place.</p>
-                </div>
-            </section>
+            </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="contact">
+        <div class="wrap">
+            <div class="fbig rv">Let's make City Hall <b class="hl">open for business</b> — and open for everyone.</div>
+            <div class="frow rv">
+                <div>
+                    <div class="flinks">
+                        <a href="https://www.linkedin.com/in/ashroughani/" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="https://www.threads.com/@roughani" target="_blank" rel="noopener">Threads</a>
+                        <a href="https://github.com/roughani" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </div>
+                <div class="mono">ASH ROUGHANI · SACRAMENTO, CALIFORNIA · CIVIC SYSTEMS ARCHITECT</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+
 </html>
