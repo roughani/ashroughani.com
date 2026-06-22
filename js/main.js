@@ -43,6 +43,19 @@
                 bp.style.transform = 'translate(' + (x * 16) + 'px,' + (y * 16) + 'px) scale(1.04)';
             });
 
+            // Mobile nav: full-screen overlay toggled by the hamburger.
+            var navToggle = document.getElementById('navtoggle');
+            function setMenu(open) {
+                nav.classList.toggle('open', open);
+                document.body.classList.toggle('nav-lock', open);
+                if (navToggle) navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+            }
+            if (navToggle) {
+                navToggle.addEventListener('click', function () { setMenu(!nav.classList.contains('open')); });
+            }
+            navLinks.forEach(function (a) { a.addEventListener('click', function () { setMenu(false); }); });
+            document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
+
             var io = new IntersectionObserver(function (entries) {
                 entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
             }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });

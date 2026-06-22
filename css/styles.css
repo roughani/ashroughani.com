@@ -178,6 +178,32 @@
             background: linear-gradient(90deg, var(--purple), var(--violet))
         }
 
+        /* Mobile nav hamburger — hidden on desktop, shown in the ≤880 media query */
+        .navtoggle {
+            display: none;
+            position: relative;
+            z-index: 951;
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            border: none;
+            background: none;
+            cursor: pointer;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px
+        }
+
+        .navtoggle span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            border-radius: 2px;
+            background: var(--ink);
+            transition: transform .3s, opacity .2s
+        }
+
         /* ===== HERO ===== */
         header {
             position: relative;
@@ -557,6 +583,15 @@
 
         .parallax cite a:hover {
             border-bottom-color: var(--pl)
+        }
+
+        /* ===== IDENTITY ===== */
+        .identity-grid {
+            background: var(--card);
+            padding: 38px 40px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px
         }
 
         /* ===== PILLARS ===== */
@@ -1226,8 +1261,77 @@
                 font-size: 18px
             }
 
+            .navtoggle {
+                display: inline-flex
+            }
+
+            /* nav's backdrop-filter makes it the containing block for fixed
+               descendants, so size the overlay to the viewport explicitly rather
+               than with inset:0 (which would collapse to the nav bar's height). */
             nav .links {
-                display: none
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                height: 100dvh;
+                z-index: 950;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 14px;
+                font-size: 26px;
+                background: rgba(246, 243, 251, .97);
+                backdrop-filter: blur(12px);
+                opacity: 0;
+                visibility: hidden;
+                transform: translateX(8%);
+                transition: opacity .3s, transform .35s cubic-bezier(.2, .8, .2, 1), visibility .3s
+            }
+
+            nav.open .links {
+                opacity: 1;
+                visibility: visible;
+                transform: none
+            }
+
+            nav .links a {
+                color: var(--ink);
+                padding: 6px 0
+            }
+
+            nav .links a.active::after {
+                left: 50%;
+                right: auto;
+                width: 28px;
+                transform: translateX(-50%)
+            }
+
+            nav.open .navtoggle span:nth-child(1) {
+                transform: translateY(7px) rotate(45deg)
+            }
+
+            nav.open .navtoggle span:nth-child(2) {
+                opacity: 0
+            }
+
+            nav.open .navtoggle span:nth-child(3) {
+                transform: translateY(-7px) rotate(-45deg)
+            }
+
+            body.nav-lock {
+                overflow: hidden
+            }
+
+            .identity-grid {
+                grid-template-columns: 1fr;
+                gap: 26px;
+                padding: 28px 22px
+            }
+
+            .pillar {
+                padding: 28px 22px;
+                gap: 0 18px
             }
 
             .h-top {
@@ -1279,6 +1383,17 @@
 
             header {
                 padding: 128px 0 70px
+            }
+        }
+
+        @media(max-width:560px) {
+            .values {
+                grid-template-columns: 1fr
+            }
+
+            .vbtn {
+                padding: 20px 18px;
+                font-size: 17px
             }
         }
 

@@ -10,10 +10,10 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDKG8J2W6Y"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-EDKG8J2W6Y');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-EDKG8J2W6Y');
     </script>
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,9 @@
     </noscript>
     <link rel="icon" href="/img/favicon.ico">
     <link rel="preload" href="/css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/css/styles.css"></noscript>
+    <noscript>
+        <link rel="stylesheet" href="/css/styles.css">
+    </noscript>
     <style>
         :root {
             --paper: #f6f3fb;
@@ -182,6 +184,10 @@
             font-family: var(--sans);
             font-size: 13px;
             font-weight: 500
+        }
+
+        .navtoggle {
+            display: none
         }
 
         nav .links a {
@@ -495,6 +501,9 @@
 
     <nav id="nav">
         <a href="#top" class="brand"><span class="dot"></span>ASH ROUGHANI</a>
+        <button class="navtoggle" id="navtoggle" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
         <div class="links">
             <a href="#identity">Identity</a>
             <a href="#pillars">Pillars</a>
@@ -574,8 +583,7 @@
                 been testing for fifteen years.</p>
             <div class="pillars">
                 <div class="rv" style="display:contents">
-                    <div
-                        style="background:var(--card);padding:38px 40px;display:grid;grid-template-columns:repeat(3,1fr);gap:30px">
+                    <div class="identity-grid">
                         <div>
                             <div class="kicker">Translate</div>
                             <p style="font-size:17px;color:var(--ink-2);margin-top:10px">Complex fiscal &amp;
@@ -789,12 +797,14 @@
                         <p>I launched <strong>Code for Sacramento</strong> and Public Innovation, contributed to
                             <strong>Open Budget Sacramento</strong>, and co-developed the <strong>California Health Data
                                 Project</strong> — then turned the vision into product with Sac2050's regional indicator
-                            dashboard.</p>
+                            dashboard.
+                        </p>
                     </div>
                     <div><span class="lbl impact">The Impact</span>
                         <p>A standing community of civic developers, a visual municipal-budget tool residents could
                             actually read, and a recognized regional ecosystem — validation that earned Comstock's
-                            <strong>top-emerging-leader</strong> recognition in 2016.</p>
+                            <strong>top-emerging-leader</strong> recognition in 2016.
+                        </p>
                     </div>
                 </div>
             </div>
