@@ -3,27 +3,40 @@
             var nav = document.getElementById('nav'), prog = document.getElementById('progress');
             var navLinks = Array.prototype.slice.call(document.querySelectorAll('nav .links a'));
             var sections = navLinks.map(function (a) { return document.querySelector(a.getAttribute('href')); });
-            function onScroll() {
-                var y = window.pageYOffset, h = document.documentElement.scrollHeight - window.innerHeight;
-                prog.style.width = (h > 0 ? (y / h * 100) : 0) + '%';
-                nav.classList.toggle('scrolled', y > 40);
-                var cur = -1;
-                for (var i = 0; i < sections.length; i++) { if (sections[i] && sections[i].getBoundingClientRect().top <= 120) cur = i; }
-                navLinks.forEach(function (a, i) { a.classList.toggle('active', i === cur); });
-            }
-            window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
-
             var bp = document.getElementById('bp');
             var pxSec = document.getElementById('parallax'), pxBg = document.getElementById('pxbg');
             var reduce = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
-            function parallax() {
-                if (!pxSec || !pxBg || reduce) return;
-                var r = pxSec.getBoundingClientRect();
-                if (r.bottom < 0 || r.top > window.innerHeight) return;
-                var prog = (r.top + r.height / 2 - window.innerHeight / 2) / window.innerHeight; // -1..1 around center
-                pxBg.style.transform = 'translate3d(0,' + (prog * -58) + 'px,0)';
+
+            var maxScroll = 0;
+            function measure() { maxScroll = document.documentElement.scrollHeight - window.innerHeight; }
+            measure();
+
+            // Single rAF-batched scroll handler: read all layout first, then write
+            // all styles, to avoid per-event layout thrashing.
+            var ticking = false;
+            function update() {
+                ticking = false;
+                var vh = window.innerHeight;
+                // --- reads ---
+                var y = window.pageYOffset;
+                var cur = -1;
+                for (var i = 0; i < sections.length; i++) {
+                    if (sections[i] && sections[i].getBoundingClientRect().top <= 120) cur = i;
+                }
+                var pxR = (pxSec && pxBg && !reduce) ? pxSec.getBoundingClientRect() : null;
+                // --- writes ---
+                prog.style.width = (maxScroll > 0 ? (y / maxScroll * 100) : 0) + '%';
+                nav.classList.toggle('scrolled', y > 40);
+                navLinks.forEach(function (a, i) { a.classList.toggle('active', i === cur); });
+                if (pxR && pxR.bottom >= 0 && pxR.top <= vh) {
+                    var p = (pxR.top + pxR.height / 2 - vh / 2) / vh; // -1..1 around center
+                    pxBg.style.transform = 'translate3d(0,' + (p * -58) + 'px,0)';
+                }
             }
-            window.addEventListener('scroll', parallax, { passive: true }); parallax();
+            function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
+            window.addEventListener('scroll', onScroll, { passive: true });
+            window.addEventListener('resize', function () { measure(); onScroll(); }, { passive: true });
+            update();
             window.addEventListener('mousemove', function (e) {
                 if (window.innerWidth < 880) return;
                 var x = (e.clientX / window.innerWidth - 0.5), y = (e.clientY / window.innerHeight - 0.5);
