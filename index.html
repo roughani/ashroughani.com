@@ -186,10 +186,6 @@
             font-weight: 500
         }
 
-        .navtoggle {
-            display: none
-        }
-
         nav .links a {
             color: var(--ink-3);
             position: relative;
@@ -213,6 +209,32 @@
             bottom: -2px;
             height: 2px;
             background: linear-gradient(90deg, var(--purple), var(--violet))
+        }
+
+        /* Mobile nav hamburger — hidden on desktop, shown in the ≤880 media query */
+        .navtoggle {
+            display: none;
+            position: relative;
+            z-index: 951;
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            border: none;
+            background: none;
+            cursor: pointer;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px
+        }
+
+        .navtoggle span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            border-radius: 2px;
+            background: var(--ink);
+            transition: transform .3s, opacity .2s
         }
 
         /* ===== HERO ===== */
@@ -575,28 +597,28 @@
     <section id="identity">
         <div class="wrap">
             <div class="sec-head rv"><span class="no">01 / Core Identity</span></div>
-            <h2 class="sec-title rv" style="max-width:16ch">Not a manager of government. A designer of it.</h2>
-            <p class="sec-intro rv" style="margin-top:30px">Sustainable public-sector innovation can't be achieved just
+            <h2 class="sec-title rv">Not a manager of government. A designer of it.</h2>
+            <p class="sec-intro rv">Sustainable public-sector innovation can't be achieved just
                 by changing policies or electing new officials. <b>It requires a structural overhaul of administrative
                     culture, procurement pathways, and operational data systems — from the inside out.</b> Across state
                 policy, civic-tech entrepreneurship, and senior municipal administration, that's the single thesis I've
                 been testing for fifteen years.</p>
             <div class="pillars">
-                <div class="rv" style="display:contents">
+                <div class="rv rv-contents">
                     <div class="identity-grid">
                         <div>
                             <div class="kicker">Translate</div>
-                            <p style="font-size:17px;color:var(--ink-2);margin-top:10px">Complex fiscal &amp;
+                            <p class="note-sm">Complex fiscal &amp;
                                 legislative frameworks into human-centered civic UX.</p>
                         </div>
                         <div>
-                            <div class="kicker" style="color:var(--accent2)">Unblock</div>
-                            <p style="font-size:17px;color:var(--ink-2);margin-top:10px">Risk-averse procurement so
+                            <div class="kicker kicker-accent2">Unblock</div>
+                            <p class="note-sm">Risk-averse procurement so
                                 small, agile teams can build for the city.</p>
                         </div>
                         <div>
-                            <div class="kicker" style="color:var(--ink)">Convene</div>
-                            <p style="font-size:17px;color:var(--ink-2);margin-top:10px">Government, capital, academia
+                            <div class="kicker kicker-ink">Convene</div>
+                            <p class="note-sm">Government, capital, academia
                                 &amp; community into one working coalition.</p>
                         </div>
                     </div>
@@ -977,9 +999,9 @@
                     </div>
                 </div>
                 <div class="edu">
-                    <div class="rv" style="margin-bottom:42px">
+                    <div class="rv">
                         <div class="kicker">Education</div>
-                        <p style="font-size:17px;color:var(--ink-2);margin-top:10px;max-width:48ch">The credentials
+                        <p class="note-sm">The credentials
                             matter less than the candor about them. I'd rather tell you what each chapter actually
                             taught me.</p>
                     </div>

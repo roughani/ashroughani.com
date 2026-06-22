@@ -483,6 +483,27 @@
             transform: none
         }
 
+        /* Reveal wrapper that must not introduce a layout box */
+        .rv-contents {
+            display: contents
+        }
+
+        /* Kicker color variants */
+        .kicker-accent2 {
+            color: var(--accent2)
+        }
+
+        .kicker-ink {
+            color: var(--ink)
+        }
+
+        /* Small supporting note paragraph (identity pillars, education) */
+        .note-sm {
+            font-size: 17px;
+            color: var(--ink-2);
+            margin-top: 10px
+        }
+
         /* ===== PARALLAX PORTRAIT BAND ===== */
         .parallax {
             position: relative;
@@ -586,6 +607,14 @@
         }
 
         /* ===== IDENTITY ===== */
+        #identity .sec-title {
+            max-width: 16ch
+        }
+
+        #identity .sec-intro {
+            margin-top: 30px
+        }
+
         .identity-grid {
             background: var(--card);
             padding: 38px 40px;
@@ -1193,6 +1222,14 @@
             color: var(--ink-3);
             vertical-align: middle;
             margin-left: 8px
+        }
+
+        .edu > .rv:first-child {
+            margin-bottom: 42px
+        }
+
+        .edu .note-sm {
+            max-width: 48ch
         }
 
         /* ===== FOOTER ===== */
